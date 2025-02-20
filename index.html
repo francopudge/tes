@@ -66,10 +66,11 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
     </style>
+    <link rel="icon" href="magic.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="sticky-box">
-      <img id="musicToggle" src="play.png" class="music-button" />
+      <img id="musicToggle" src="play.webp" class="music-button" />
     </div>
 
     <div class="content">
@@ -97,10 +98,10 @@
       musicToggle.addEventListener("click", () => {
         if (isPlaying) {
           music.pause();
-          musicToggle.src = "play.png";
+          musicToggle.src = "play.webp";
         } else {
           music.play();
-          musicToggle.src = "pause.png";
+          musicToggle.src = "pause.webp";
         }
         isPlaying = !isPlaying;
       });
