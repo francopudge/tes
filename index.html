@@ -73,9 +73,17 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
-      .gandora-img {
-        margin-top: 150px;
-      }
+     
+      .marquee-container {
+    width: 50%; /* Sesuaikan lebar gerakan */
+    margin: 0 auto; /* Agar berada di tengah */
+ 
+}
+
+.marquee {
+    display: inline-block;
+    width: 100%;
+}
     </style>
   </head>
   <body>
@@ -85,7 +93,9 @@
     </div>
 
     <div class="welcome-text">
-      <marquee> Selamat Datang Di Website Generation of Duel </marquee>
+      <div class="marquee-container">
+        <marquee class="marquee">Selamat Datang Di Website Generation of Duel</marquee>
+    </div>
     </div>
 
     <div class="content">
@@ -95,13 +105,7 @@
         </video>
       </div>
 
-      <img
-        src="gandora.webp"
-        class="gandora-img"
-        width="300px"
-        height="300px"
-      />
-    </div>
+      
 
     <audio id="backgroundMusic" loop>
       <source src="Yugioh.mp3" type="audio/mpeg" />
