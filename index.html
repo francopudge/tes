@@ -2,7 +2,6 @@
 <html lang="id">
   <head>
     <title>Generation of Duel</title>
-    <!-- HTML Meta Tags -->
     <meta name="description" content="Tempat Main Kartu Yugioh" />
     <meta name="language" content="id" />
     <meta name="author" content="kristiadi" />
@@ -10,29 +9,34 @@
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
-
-    <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Yugioh Master Duel" />
     <meta itemprop="description" content="Tempat Main Kartu Yugioh" />
     <meta itemprop="image" content="magic.ico" />
+    <link rel="icon" href="magic.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://francopudge.github.io/robots.txt/" />
     <style>
       body {
         margin: 0;
         font-family: Arial, sans-serif;
         text-align: center;
+        background: yellow;
       }
       .sticky-box {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        background-color: orange;
+        background-color: brown;
         color: white;
         text-align: center;
         padding: 20px;
         font-size: 24px;
         font-weight: bold;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .sticky-box a {
+        color: white;
+        text-decoration: none;
       }
       .music-button {
         position: absolute;
@@ -42,64 +46,63 @@
         width: 40px;
         height: 40px;
       }
-      .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 120px;
-        width: 100%;
-      }
       .welcome-text {
         font-size: 28px;
         font-weight: bold;
         color: black;
         overflow: hidden;
         white-space: nowrap;
-        margin-bottom: 10px; /* Kurangi margin bawah */
-        margin-top: -10px; /* Tambahkan margin atas negatif */
+        margin-top: 160px; /* Supaya selalu di bawah sticky box */
       }
-
-      marquee {
-        display: block;
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px; /* Jeda dari teks selamat datang */
         width: 100%;
       }
       .video-container {
         width: 80%;
         max-width: 500px;
-        margin-top: 74px; /* Tambahkan margin atas */
+        margin-top: 80px;
       }
-
       video {
         width: 100%;
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       }
-      .sticky-box a {
-        color: white;
-        text-decoration: none;
+      .gandora-img {
+        margin-top: 150px;
+        position: relative;
+        left: -400px; /* Geser ke kiri */
       }
     </style>
-    <link rel="icon" href="magic.ico" type="image/x-icon" />
-    <link rel="canonical" href="https://francopudge.github.io/robots.txt/" />
   </head>
   <body>
     <div class="sticky-box">
-      <a href="god.html">Guild God Internal Tournament </a>
+      <a href="god.html">Guild God Internal Tournament</a>
       <img id="musicToggle" src="play.webp" class="music-button" />
     </div>
 
-    <div class="content">
-      <div class="welcome-text">
-        <marquee> Selamat Datang Di Website Generation of Duel </marquee>
-      </div>
+    <div class="welcome-text">
+      <marquee> Selamat Datang Di Website Generation of Duel </marquee>
+    </div>
 
+    <div class="content">
       <div class="video-container">
         <video autoplay loop muted>
           <source src="yugioh.mp4" type="video/mp4" />
         </video>
       </div>
+
+      <img
+        src="gandora.webp"
+        class="gandora-img"
+        width="300px"
+        height="300px"
+      />
     </div>
 
     <audio id="backgroundMusic" loop>
